@@ -1,0 +1,689 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+/*Navigation Bar*/
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.navbar-nav {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 15px 0 15px 15px;
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.home-link:hover {
+    text-decoration: underline !important;
+}
+
+.our-products-link:hover {
+    text-decoration: underline !important;
+}
+
+.about-us-link:hover {
+    text-decoration: underline !important;
+}
+
+.navbar-brand {
+    height: 80px;
+}
+
+.nav-link {
+    padding: 0 25px 0 25px !important;
+}
+/*Navigation Bar*/
+
+/*Order Us Pop Up*/
+.modal-title{
+    width: 100%;
+    text-align: center;
+    }
+
+.modal-body img {
+    width: 15rem;
+    border-radius: 50%;
+    padding: 10px !important;
+    margin: 0 auto 0 auto;
+}
+/*Order Us Pop Up*/
+
+/*Hero Section*/
+.hero-section {
+    background-image: url("https://github.com/EuclidQuemada/IT0043/blob/main/Final%20Project/assets/Background.png?raw=true");
+    background-color: #006800;
+    background-size: cover;
+    overflow: hidden;
+    min-width: none;
+    min-height: 100vh;
+    color: #FFFFFF;
+    padding: 100px 0 0 0;
+}
+
+@keyframes fade-img {
+    0%{
+        transform: rotate(5deg);    
+    }
+    100%{
+        transform: rotate(-5deg);  
+    }
+    }
+    
+    .hero-section img{
+    max-width: 50rem;
+    padding: 20px 0 20px 0;
+    margin: auto;
+    b-webkit-filter: drop-shadow(5px 5px 5px #222222);
+    filter: drop-shadow(5px 5px 5px #222222);  
+    animation-name: fade-img;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    -webkit-transition: all 1.5s ease;
+        -moz-transition: all 1.5s ease;
+            -o-transition: all 1.5s ease;
+            transition: all 1.5s ease;
+    animation-direction:alternate-reverse;
+    }
+
+.hero-section h1 {
+    font-weight: 700;
+    margin: 0 !important;
+    padding: 1rem 0 1rem 0;
+}
+
+@media screen and (max-width: 775px) {
+    .hero-section h1 {
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-weight: 400;
+        font-size: 0.90rem;
+    }
+
+    .hero-section img{
+        width: 50vw;
+    }
+
+    .modal-body img {
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .hero-section {
+        padding: 76px 0 0 0;
+    }
+
+    .navbar-brand {
+        height: 60px;   
+    }
+
+    .hero-section .row{
+        text-align: center;
+        padding: 30px;
+    }
+
+    .hero-left {
+        margin: 0 2rem 0 2rem;
+    }
+
+    .hero-section h1 {
+        font-size: 4rem;
+    }
+
+    .hero-section p {
+        text-align: justify;
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+
+    .hero-section img{
+        display: block;
+        margin: auto;    
+        width: 75vw;
+    }
+} 
+
+@media screen and (min-width: 993px) {
+    .hero-section p {
+        font-weight: 400;
+        font-size: 1.2rem;
+        padding-right: 100px;
+    }
+
+    .hero-left {
+        padding-left: 5rem;
+    }
+
+    .hero-section h1 {
+        font-size: 6rem;
+    }
+}
+
+.inquiry-form .btn {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+
+.hero-section .btn, .our-products .btn, .about-us .btn, .inquiry-form .btn, .inquiry-section .btn {
+    background-color: #ff9116;
+    width: 150px;
+    border-width: 5px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.hero-section .btn:hover, .our-products .btn:hover, .about-us .btn:hover, .inquiry-form .btn:hover, .inquiry-section .btn:hover {
+    background-color: #c0261f;
+    color: #FFFFFF;
+}
+
+.hero-section h1, .hero-section p, .hero-section a {
+    margin: 20px 0 20px 0;
+}
+/*Hero Section*/
+
+.our-products img, .about-us img{
+    border-radius: 10px;
+    float: right;
+    width: 35rem;
+}
+
+.our-products .section-par, .about-us .section-par {
+    text-align: justify;
+    padding: 0 2rem 0 2rem;
+    width: 35rem;
+}
+
+.our-products .section-par h1, .about-us .section-par h1 {
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.our-products .section-par p, .about-us .section-par p {
+    font-weight: 400;
+}
+
+.our-products {
+    min-height: 70vh;
+}
+
+.our-products .row {
+    background-color: #f5f5f5;
+    border-radius: 25px;
+}
+
+.about-us {
+    min-height: 70vh;
+}
+
+.about-us .row {
+    background-color: #f5f5f5;
+    border-radius: 25px;
+}
+
+/*Footer*/
+.footer {
+    background-image: url("https://github.com/EuclidQuemada/IT0043/blob/main/Final%20Project/assets/Background.png?raw=true");
+    background-color: #006800;
+    background-size: cover;
+    overflow: hidden;
+    min-width: none;
+    color: #FFFFFF;
+}
+
+.footer .border-top {
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.footer a {
+    color: #FFFFFF;
+}
+
+.footer a:hover {
+    color: #ff9116;
+}
+
+.footer .footer-heading img{
+    width: 18rem;
+}
+
+.footer-icon-group {
+    margin: 2rem 0 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icon-group img {
+    width: 3em;
+    margin-bottom: 1rem;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(110deg) brightness(98%) contrast(108%);
+}
+
+.footer-icon-group img:hover {
+    filter: invert(57%) sepia(91%) saturate(1158%) hue-rotate(347deg) brightness(102%) contrast(103%);
+}
+
+.footer .col-lg-3, .footer .col-lg-2 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.footer .row {
+    padding: 4rem 0 4rem 0;
+}
+/*Footer*/
+
+.section-header {
+    background-image: url("https://github.com/EuclidQuemada/IT0043/blob/main/Final%20Project/assets/Background.png?raw=true");
+    background-color: #006800;
+    background-size: cover;
+    overflow: hidden;
+    min-width: none;
+    min-height: 80px;
+    color: #FFFFFF;
+    margin: 96px 0 0 0;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.extras-section h1 {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+@media screen and (max-width: 790px) {
+    .section-header {
+        margin-top: 76px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .section-header { 
+        font-size: 2.5rem;  
+    }
+
+    .section-header .col-lg-12{
+        padding: 0;
+    }
+}
+
+/*Product Description*/
+.category-intro {
+    margin-top: 30px;
+}
+
+.category-intro h1
+{
+    padding-top: 20px;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+}
+
+.category-intro p
+{
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+}
+/*Product Description*/
+
+/*Product Cards*/
+.products h1 {
+    padding: 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.products p {
+    padding: 0 30px 0 30px;
+    text-align: center;
+}
+
+.products .container
+{
+    padding-bottom: 50px;
+    position: flex;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+.products .container .card
+{
+    width: 100%;
+    background: #f5f5f5;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.products .container .card .pics
+{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.products .container .card .pics img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+    border-radius: 10px 10px 0 0;
+}
+.products .container .card:hover .pics img
+{
+    transform: scale(1.2);
+}
+.products .container .card .info
+{
+    padding: 10px;
+}
+.products .container .card .info .prodname h4
+{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.products .container .card .info .desc h5
+{
+    font-size: 14px;
+    font-weight: 300;
+}
+@media (max-width: 580px)
+{
+    .products .container
+    {
+    grid-template-columns: no-repeat(1, 1fr);
+    display: block;
+    width: 90%;
+
+    }
+        .products .card{
+        margin-bottom: 30pt;
+    }
+
+}
+/*Product Cards*/
+
+/*Compny Brief*/
+.company-brief {
+    background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url(https://github.com/EuclidQuemada/IT0043/blob/main/Final%20Project/assets/Company%20Brief.png?raw=true);
+    background-size: cover; 
+    background-position: right center;
+    color: #000000;
+    padding: 50px 0 30px;
+}
+
+.company-brief h1 {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: right;
+    padding: 0 2rem 0 2rem;
+}
+
+.company-brief .section-par {
+    padding: 0 2rem 0 2rem;
+}
+/*Compny Brief*/
+
+/*Compny History*/
+.company-history-1 img, .company-history-3 img {
+    width: 35rem;
+}
+
+.company-history-1 .section-par, .company-history-3 .section-par {
+    text-align: left !important;
+    padding: 0 2rem 0 2rem;
+    margin: auto 0 auto 0;
+    width: 35rem;
+    font-weight: 400;
+}
+
+.company-history-2 img {
+    margin: auto;
+    display: block;
+    width: 30rem;
+}
+
+.company-history-2 .section-par {
+    text-align: center;
+    padding: 0 2rem 0 2rem;
+    margin: auto 0 auto 0;
+    font-weight: 400;
+}
+
+.company-history-4 p {
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 990px) {
+    .company-brief h1 {
+        text-align: center;
+    }
+
+    .company-brief p, .company-history-1 p, .company-history-3 p {
+        text-align: center;
+    }
+
+    .company-history-1 img, .company-history-3 img{
+        margin: auto;
+        display: block;
+        width: 35rem;
+    }
+
+    .company-history-4 p {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}
+/*Company History*/
+
+/*Mission and Vision*/
+.mission-vision {
+    background: url(https://github.com/EuclidQuemada/IT0043/blob/main/Final%20Project/assets/Background.png?raw=true);
+    font-size: 15px;
+    font-weight: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 30px 0 30px;
+}
+
+.mission-vision .col-lg-1 {
+    padding: 0;
+}
+
+.mission-vision .col-lg-4 {
+    padding: 2rem;
+    margin: 0;
+}
+
+.mission-vision h1 {
+    vertical-align: text-top;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.mission-vision p {
+    font-size: 15px;
+    margin: 0 !important;
+}
+
+.mission-vision img {
+    width: 3rem;
+    margin: 0 20px 0 0;
+    float: left;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(110deg) brightness(98%) contrast(108%);
+}
+
+.mission-vision ul {
+    list-style-type: none;
+}
+/*Mission Vision*/
+
+/*Menu Recall*/
+.menu {
+    position: relative;
+    text-align: center;
+    color: black;
+    padding: 100px 0 100px;
+  }
+
+.menu-chicharon {
+    background-image: url("/assets/Chicharon\ with\ Laman\ Before.png");
+    background-size: cover;
+    background-position: center;
+    height: auto; 
+    width: auto; 
+    min-height: 300px;
+    max-width: 25rem;
+    min-height: 300px; 
+    max-height: 25rem;
+}
+.menu-chicharon:hover {
+    background-image: url("/assets/Chicharon\ with\ Laman\ After.png");
+    background-size: cover;
+    transition: opacity .2s;
+}
+
+.menu-pinoy-meals {
+    background-image: url("/assets/Chichen\ Barbecue\ Meal\ Before.png");
+    background-size: cover;
+    background-position: center;
+    height: auto; 
+    width: auto; 
+    min-height: 300px;
+    max-width: 25rem;
+    min-height: 300px; 
+    max-height: 25rem;
+}
+
+.menu-pinoy-meals:hover {
+    background-image: url("/assets/Chicken\ Barbecue\ Meal\ After.png");
+    background-size: cover;
+}
+
+.menu-other-products {
+    background-image: url("/assets/Adobong\ Kangkong\ Before.png");
+    background-size: cover;
+    background-position: center;
+    height: auto; 
+    width: auto; 
+    min-height: 300px;
+    max-width: 25rem;
+    min-height: 300px; 
+    max-height: 25rem;
+}
+
+.menu-other-products:hover {
+    background-image: url("/assets/Adobong\ Kangkong\ After.png");
+    background-size: cover;
+}
+
+/*Affiliations*/
+.affiliations, .inquiry-section {
+    background: url(https://github.com/EuclidQuemada/IT0043/blob/main/Final%20Project/assets/Background.png?raw=true);
+    font-size: 15px;
+    font-weight: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 30px 0 30px;
+    margin: 0 0 50px 0;
+}
+
+.affiliations h1, .inquiry-section h1 {
+    font-weight: 700;
+    text-align: center;
+}
+/*Affiliations*/
+
+input[type=text], input[type=email], input[type=tel], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 3px solid #ccc;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .extras-section h1 {
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+
+    .extras-section p {
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    .extras-section h1 {
+        font-weight: 700;
+        font-size: 4rem;
+    }
+
+    .extras-section p {
+        font-weight: 500;
+        font-size: 2rem;
+    }
+}
+
+.extras-section .col-lg-4 {
+    text-align: center;
+}
+
+.extras-section img{
+    width: 18rem;
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto 0 auto;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.extras-section .description {
+    padding: 0 0 2rem 0;
+    font-size: 1rem;
+}
