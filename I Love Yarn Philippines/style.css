@@ -12,38 +12,25 @@
     --fs-xs: 0.8rem;
 }
 
-/* X-Small devices (portrait phones, less than 576px)
-No media query for `xs` since this is the default in Bootstrap */
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-
-}
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Instrument Sans', sans-serif;
+}
+
+button {
+    padding: 0.5rem 1rem;
+
+    font-size: var(--fs-s);
+    font-weight: 700;
+    color: #FFFFFF;
+
+    border: none;
+    border-radius: 100px;
+    background-color: #7773c3;
+
+    cursor: pointer;
 }
 
 nav {
@@ -54,10 +41,13 @@ nav {
 
     position: sticky;
     top: 0;
+
+    background-color: #FFFFFF;
 }
 
-nav img {
+nav .logo {
     height: 2rem;
+    cursor: pointer;
 }
 
 nav ul {
@@ -80,20 +70,8 @@ nav a:hover {
     color: #7773c3;
 }
 
-button {
-    padding: 0.5rem 1rem;
-
-    font-size: var(--fs-s);
-    font-weight: 700;
-    color: #FFFFFF;
-
-    border: none;
-    border-radius: 100px;
-    background-color: #7773c3;
-}
-
 .hero {
-    padding: 2rem;
+    padding: 5rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,6 +88,10 @@ button {
     font-size: var(--fs-xxl);
     font-weight: 600;
     color: #FFFFFF;
+}
+
+.hero button {
+    font-size: var(--fs-l);
 }
 
 .benefits {
@@ -214,6 +196,7 @@ button {
 
 .new-arrivals img {
     width: 100%;
+    max-width: 100px;
 }
 
 .new-arrivals h1 {
@@ -227,3 +210,61 @@ button {
 .new-arrivals p {
     font-size: var(--fs-xs);
 }
+
+.reviews {
+    padding: 2rem 10rem;
+}
+
+.reviews .card-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.reviews .card {
+    height: 10rem;
+    padding: 1rem;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
+.reviews img {
+    height: 100%;
+    justify-self: end;
+    border-radius: 0.5rem;
+}
+
+/* @media (min-width:320px)  {
+    nav {
+        display: none;
+    }
+
+    .category {
+        padding: 1rem;
+    }
+
+    .category .card-container {
+        flex-wrap: wrap;
+    }
+
+    .new-arrivals {
+        padding: 1rem;
+    }
+
+    .new-arrivals .card-container {
+        flex-wrap: wrap;
+    }
+
+    .reviews {
+        padding: 1rem;
+    }
+
+    .reviews .card-container {
+        flex-direction: column;
+    }
+}
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
