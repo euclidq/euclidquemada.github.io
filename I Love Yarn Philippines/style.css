@@ -117,7 +117,7 @@ nav a:hover {
     margin: 3rem 0;
 }
 
-.categories .row, .sale .row, .new-arrivals .row, .reviews .row {
+main .row {
     padding: 0 5rem;
 }
 
@@ -230,4 +230,57 @@ nav a:hover {
 .reviews h2 {
     margin: 0;
     font-size: var(--fs-m);
+}
+
+.location {
+    background-image: url(hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.location .row {
+    padding: 5rem;
+}
+
+.location .col-5 > * {
+    padding: 1rem;
+    background-color: #FFFFFF;
+}
+
+.location h1 {
+    font-size: var(--fs-m);
+}
+
+.location p {
+    font-size: var(--fs-xs);
+}
+
+.location .button {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+footer {
+    background-color: aqua;
+}
+
+footer.row:first-child {
+    text-align: center;
+}
+
+footer .logo {
+    width: 50%;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer h1 {
+    font-size: var(--fs-s);
+}
+
+footer a {
+    font-size: var(--fs-xs);
 }
